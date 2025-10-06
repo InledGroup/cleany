@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleany</title>
+  <style>
+    body {
+      width: 320px;
+      padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+    }
+
+    .container {
+      padding: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .status-box {
+      background: rgba(167, 166, 231, 0.2);
+      border-radius: 12px;
+      padding: 15px;
+      margin: 15px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .status-item {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .checkmark {
+      color: #4ade80;
+      margin-right: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .info {
+      background: rgba(167, 166, 231, 0.2);
+      border-radius: 8px;
+      padding: 12px;
+      margin: 15px 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .timestamp {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.9;
+      margin: 10px 0;
+    }
+
+    .close-btn {
+      width: 100%;
+      padding: 12px;
+      background: white;
+      color: #667eea;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background: rgba(167, 166, 231, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .close-btn:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img class="icon" src="icon.png"></img>
+      <h1>Cleany</h1>
+    </div>
+
+    <div class="status-box">
+      <div class="status-item">
+        <span class="checkmark">✓</span>
+        <span>Cookies eliminadas</span>
+      </div>
+      <div class="status-item">
+        <span class="checkmark">✓</span>
+        <span>Sesiones cerradas</span>
+      </div>
+      <div class="status-item">
+        <span class="checkmark">✓</span>
+        <span>Historial borrado</span>
+      </div>
+      <div class="status-item">
+        <span class="checkmark">✓</span>
+        <span>Contraseñas eliminadas</span>
+      </div>
+      <div class="status-item">
+        <span class="checkmark">✓</span>
+        <span>Caché limpiado</span>
+      </div>
+      <div class="status-item">
+        <span class="checkmark">✓</span>
+        <span>Datos de formularios borrados</span>
+      </div>
+    </div>
+
+    <div class="info">
+      ℹ️ Tu navegador ha sido limpiado automáticamente al iniciarse. Todos tus datos privados han sido eliminados de forma segura.
+    </div>
+
+    <div class="timestamp" id="timestamp">
+      Última limpieza: Cargando...
+    </div>
+
+    <button class="close-btn" id="closeBtn">Cerrar</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
