@@ -38,8 +38,8 @@ function limpiarDatosNavegador() {
     () => {
       console.log("Datos del navegador eliminados exitosamente");
       
-      // Guardar el estado de limpieza
-      const ahora = new Date().toLocaleString('es-ES');
+      // Guardar el estado de limpieza (timestamp)
+      const ahora = Date.now();
       chrome.storage.local.set({
         'ultimaLimpieza': ahora,
         'limpiezaRealizada': true

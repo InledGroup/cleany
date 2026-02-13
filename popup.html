@@ -73,6 +73,18 @@
       margin: 10px 0;
     }
 
+    .lang-selector {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .lang-selector select {
+      padding: 4px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 12px;
+    }
+
     .close-btn {
       width: 100%;
       padding: 12px;
@@ -99,6 +111,12 @@
 </head>
 <body>
   <div class="container">
+    <div class="lang-selector">
+      <select id="langSelect">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </div>
     <div class="header">
       <img class="icon" src="icon.png"></img>
       <h1>Cleany</h1>
@@ -107,31 +125,31 @@
     <div class="status-box">
       <div class="status-item">
         <span class="checkmark">✓</span>
-        <span>Cookies eliminadas</span>
+        <span id="label-cookies">Cookies eliminadas</span>
       </div>
       <div class="status-item">
         <span class="checkmark">✓</span>
-        <span>Sesiones cerradas</span>
+        <span id="label-sessions">Sesiones cerradas</span>
       </div>
       <div class="status-item">
         <span class="checkmark">✓</span>
-        <span>Historial borrado</span>
+        <span id="label-history">Historial borrado</span>
       </div>
       <div class="status-item">
         <span class="checkmark">✓</span>
-        <span>Contraseñas eliminadas</span>
+        <span id="label-passwords">Contraseñas eliminadas</span>
       </div>
       <div class="status-item">
         <span class="checkmark">✓</span>
-        <span>Caché limpiado</span>
+        <span id="label-cache">Caché limpiado</span>
       </div>
       <div class="status-item">
         <span class="checkmark">✓</span>
-        <span>Datos de formularios borrados</span>
+        <span id="label-forms">Datos de formularios borrados</span>
       </div>
     </div>
 
-    <div class="info">
+    <div class="info" id="info-text">
       ℹ️ Tu navegador ha sido limpiado automáticamente al iniciarse. Todos tus datos privados han sido eliminados de forma segura.
     </div>
 

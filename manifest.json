@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cleany",
   "version": "1.0",
-  "description": "Limpia automáticamente cookies, historial, sesiones y contraseñas al abrir Chrome",
+  "description": "Automatically clears cookies, history, sessions, and passwords when opening Chrome",
   "permissions": [
     "browsingData",
     "storage",
